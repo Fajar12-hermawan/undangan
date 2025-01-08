@@ -92,7 +92,8 @@ body {
   padding-top: 8rem;
   padding-bottom: 10rem;
 }
-.info h3 {
+.info h3,
+.gifts h2 {
   font-family: "playwrite AU SA", serif;
   color: var(--pink);
 }
@@ -125,15 +126,16 @@ body {
 
 /* laptop */
 
-.story span, .gallery span {
+.story span, .gallery span,.gifts span {
   font-size: 1rem;
   font-weight: 300;
 }
-.story h2, .gallery h2 {
+.story h2, .gallery h2,
+.rsvp h2 {
   font-family: "playwrite AU SA", serif;
   color: var(--pink);
 }
-.story p, .gallery p {
+.story p, .gallery p, .rsvp p,.gifts p {
   font-size: 10px;
   font-weight: 100;
   padding: 5px;
@@ -237,6 +239,71 @@ body {
 
 .gallery{
   background-color: #c1b5ba;
+}
+.rsvp{
+  background-color:var(--bg);
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+.rsvp p{
+  color: white;
+}
+.rsvp form label {
+  color: white;
+}
+.rsvp button{
+  background-color:var(--pink);
+  color:white;
+  border: var(--pink);
+  margin-top: 25px;
+}
+.gifts{
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.footer{
+  background-color: var(--pink);
+  color:white;
+  padding: 1rem;
+  padding-top:5px;
+  justify-content: center;
+  
+}
+.footer a{
+  list-style: none;
+  text-decoration: none;
+  color: var(--bg);
+}
+.footer li{
+  list-style: none;
+  display: inline;
+}
+.footer a :hover{
+  color:white;
+}
+
+.music-icon{
+  width: 4rem;
+  height: 4rem;
+  bottom: 1rem;
+  right:4rem;
+  position:fixed;
+  font-size: 4rem;
+  color: white;
+  mix-blend-mode: difference;
+  display: flex;
+  transform-origin: center;
+  justify-content: center;
+  align-items:center;
+  animation: rotating 4s linear infinite;
+}
+@keyframes rotating {
+  from{
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
 }
 
 /* mobilephone  */

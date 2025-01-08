@@ -20,15 +20,17 @@
 <!-- countdown -->
 <link rel="stylesheet" href="simplicountdown/default.min.css">
 <script src="simplicountdown/simplyCountdown.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
   <body>
-    <section class="hero w-100 h-100 mx-auto p-3 d-flex justify-content-center align-items-center text-white " id="her">
+    <section id="hero" class="hero w-100 h-100 mx-auto p-3 d-flex justify-content-center align-items-center text-white  " id="her">
         <main>
+        <span><h4>kepada</h4></span>
             <h4>the wedding of</h2>
             <h1> doraemon dan doraemoni</h1>
             <p>yang akan melangsukan akad pernikahan</p>
             <div id="any-id" class="simply-countdown"></div>
-            <a href="#home" class="btn btn-lg align-items-center" onclick=" disableScroll()">bukan undangan</a>
+            <a href="#home" class="btn btn-lg align-items-center" onclick=" enableScroll()">bukan undangan</a>
         </main>
     </section>
     <!-- navbar start -->
@@ -253,8 +255,96 @@
         </div>
       </div>
      </section>
-      
+       
+     <section id="rsvp" class="rsvp">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <h2>informasi kehadiran</h2>
+              <p>mohon isi form di bawah ini untuk mengkonfirmasi kehadiran anda!
+              </p>
+            </div>
+          </div>
+          <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbwnXOO4NHgrs4EcLUFYIcW0lc6k7hX-Prn_ZLIog8ratEH8Udx7nHWxwTiVxwK8c26eoQ/exec" id="my-form">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="nama" class="form-label">NAMA</label>
+                <input type="text" class="form-control" id="nama" name="nama">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="jumlah" class="form-label">jumlah</label>
+                <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5"  value="1" lenght="1">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="konfirmasi" class="form-label">konfirmasi</label>
+                <select  id="status" class="form-select" name="status">
+                  <option value="1">hadir</option>
+                  <option value="0">tidak hadir</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 ">
+              <button class="btn btn-primary">kirim</button>
+            </div>
+          </form>
+        </div>
+     </section>
      <!-- content section end -->
+      <!-- gifts -->
+       <section id="gifts" class="gifts">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <span>ungkapan pernikahan</span>
+              <h2>kirim hadiah</h2>
+              <p> tiak tidak apa apa tidak ada hadiah yang penting kehadirannya pada saat acara
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6">
+              <ul class="list-group">
+                <li class="list-group-item"> 
+                  <div>BCA</div>
+                  1672442804 - Fajar hermawan
+                </li>
+                <li class="list-group-item"> 
+                  <div>BRI</div>
+                  089298762535645826002 - Fajar hermawan
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+       </section>
+       <section class="footer">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col text-center">
+              <small class="block">&copy;dorawedding. right all reserved.</small>
+              <small class="block">design by<a href="https://instagram.com/hdiah.chiki_">@fajarheremawan</a></small>
+                <ul>
+                  <li></li><a href="https://instagram.com/hdiah.chiki_"><i data-feather="instagram"></i></a></li>
+                  <li></li><a href="https://instagram.com/hdiah.chiki_"><i data-feather="twitter"></i></a></li>
+                  <li></li><a href="https://instagram.com/hdiah.chiki_"><i data-feather="facebook"></i></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+       </section>
+       <div class="music-container">
+        <audio id="music" autoplay loop>
+          <source  src="audio/saatbahagia.mp3" type="audio/mp3">
+        </audio>
+        <div class="music-icon" style="display:none;">                    
+          <i class="bi bi-play-circle"></i>
+        </div>
+       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="simplicountdown/simplyCountdown.js"></script>
